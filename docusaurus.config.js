@@ -9,6 +9,7 @@ const config = {
     baseUrl: '/',
     organizationName: 'ThreeTAG',
     projectName: 'Documentation',
+    deploymentBranch: 'deployment',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     i18n: {

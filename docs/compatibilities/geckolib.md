@@ -1,5 +1,7 @@
 # GeckoLib Render Layers
-Before you start with this, make sure to have read the page about [render layers](Render-Layers) starting at "Creating a Render Layer"!
+:::warning
+Before you start with this, make sure to have read the page about render layers!
+:::
 
 With GeckoLib you can use their model format for render layers, and even use their animations for them!
 

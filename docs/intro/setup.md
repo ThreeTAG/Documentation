@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Setup your Pack
 To auto-generate your basic pack structure, you can use [this](https://squirrelcontrol.threetag.net/template-generator) generator. It will cover the pack.mcmeta and all necessary folders.
 

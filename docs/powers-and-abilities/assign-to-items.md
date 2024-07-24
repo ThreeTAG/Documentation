@@ -10,7 +10,7 @@ To get started, you need to create a json file in the following folder: `data/<n
 The file name can be whatever you want, you might want to give it a proper/self-explaining name though.  
 The inside should look something like this:
 
-```json
+```json title="data/<namespace>/palladium/item_powers/<file name>.json"
 {
   "slot": "chest",
   "item": "minecraft:iron_chestplate",
@@ -29,10 +29,12 @@ You can also use one file to bind multiple powers to an item, like this:
 {
   "slot": "chest",
   "item": "minecraft:iron_chestplate",
+  // highlight-start
   "power": [
     "test:test_power_1",
     "test:test_power_2"
-  ]
+  ],
+  // highlight-end
 }
 ```
 
@@ -40,10 +42,12 @@ Additionally, you can also add power(s) to multiple items in the same way:
 ```json
 {
   "slot": "chest",
+  // highlight-start
   "item": [
     "minecraft:iron_chestplate",
     "minecraft:diamond_chestplate"
   ],
+  // highlight-end
   "power": "test:test_power"
 }
 ```
@@ -54,8 +58,7 @@ Obviously, both those things can be combined.
 If you've created a suit set, you can assign powers to them aswell. It saves you work by not having to check for all the items being equipped.  
 The process is very similar to items:  
 
-Create a file at: `data/<namespace>/palladium/suit_set_powers/<file name>.json`  
-```json
+```json title="data/<namespace>/palladium/suit_set_powers/<file name>.json"
 {
   "suit_set": "test:wood",
   "power": "test:invisibility"

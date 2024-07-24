@@ -9,7 +9,7 @@ If you wish to set it up by hand, continue reading:
 
 Create a folder (or zip file) in your `addonpacks` folder. The first thing you will need to add is a `pack.mcmeta` file inside it, structured like this:
 
-```json
+```json title="pack.mcmeta"
 {
   "pack": {
     "id": "<unique id of your pack>",
@@ -31,7 +31,7 @@ Create a folder (or zip file) in your `addonpacks` folder. The first thing you w
 ## Dependencies (optional)
 Sometimes you want to use features of extra mods or even addon packs within your own one. To make sure the end-user has those installed and does not run into any issues, you can add dependencies into your `pack.mcmeta`.
 
-```json
+```json title="pack.mcmeta"
 {
   "pack": {
     "id": "<unique id of your pack>",
@@ -39,6 +39,7 @@ Sometimes you want to use features of extra mods or even addon packs within your
     "pack_format": 8,
     "version": "1.0.0.0"
   },
+  // highlight-start
   "dependencies": {
     "common": {
       "minecraft": ">=1.30",
@@ -51,7 +52,8 @@ Sometimes you want to use features of extra mods or even addon packs within your
     "fabric": {
       "trinkets": ">=3.3.0"
     }
-  }
+  },
+  // highlight-end
 }
 ```
 

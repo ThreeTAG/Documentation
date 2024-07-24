@@ -6,8 +6,7 @@ After that check the items.html file (which is located in your local `mods/docum
 
 ## Required assets
 If you load the game up now, you will notice that your item has no model/texture. To provide that you need to create following file:  
-`assets/<namespace>/models/item/<item ID>.json`
-```json
+```json title="assets/<namespace>/models/item/<item ID>.json"
 {
   "parent": "minecraft:item/generated",
   "textures": {

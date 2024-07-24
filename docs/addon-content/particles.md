@@ -1,10 +1,9 @@
 # Particles
 
-To get started and make your own particle type, create a json file at the following location of your pack: `addon/<namespace>/particle_types/<particle ID>.json`.
+## Setup
+To get started and make your own particle type, create a json file like this:
 
-The json file itself can look like this:
-
-```json
+```json title="addon/<namespace>/particle_types/<particle ID>.json"
 {
   "lifetime": 60,
   "has_physics": false,
@@ -31,12 +30,11 @@ The json file itself can look like this:
 `texture_type` determines how the textures are handled. More info in the bottom section. Possible values: "random", "aging".  *(optional, fallback: random)*
 
 
-# Particle Texture File
+## Particle Texture File
 
-To determine which textures can be used for your particle, you need to create an additional json file in the assets directory: `assets/<namespace>/particles/<particle ID>.json`.  
-In there you specify the particles like this:
+To determine which textures can be used for your particle, you need to create an additional json file in the assets directory:  
 
-```json
+```json title="assets/<namespace>/particles/<particle ID>.json"
 {
   "textures": [
     "test:test_particle_0",

@@ -5,9 +5,7 @@ Villager Professions are the "jobs" that villagers can acquire by finding a comp
 ## Adding a POI Type
 POI Type (= Point of Interest Type) is an object that determines detectable blocks in the game. It is used by bees to find their nests, but also by villagers to find a workstation. Adding one is simple as that:
 
-Directory: `addon/<namespace>/poi_types/<name>.json`  
-Resulting ID: `<namespace>:<name>`
-```json
+```json title="addon/<namespace>/poi_types/<name>.json"
 {
   "block": "minecraft:redstone_lamp"
 }
@@ -17,8 +15,7 @@ You can also add "max_tickets" and "valid_range" settings, but they will fallbac
 
 ## Adding the POI Type to the tag
 To let Minecraft know that our new POI type is suitable for villagers, we need to add it to `minecraft:acquirable_job_site` tag. Simply add a file as following:  
-Directory: `data/minecraft/tags/point_of_interest_type/acquirable_job_site.json`
-```json
+```json title="data/minecraft/tags/point_of_interest_type/acquirable_job_site.json"
 {
   "values": [
     "test:redstone_lamp"
@@ -31,9 +28,7 @@ Directory: `data/minecraft/tags/point_of_interest_type/acquirable_job_site.json`
 ## Adding the Profession
 Adding the actual profession is also very easy:
 
-Directory: `addon/<namespace>/villager_professions/<name>.json`  
-Resulting ID: `<namespace>:<name>`
-```json
+```json title="addon/<namespace>/villager_professions/<name>.json"
 {
   "poi_type": "test:redstone_lamp",
   "sound_event": "minecraft:entity.villager.work_librarian"
@@ -49,8 +44,7 @@ A villager profession needs two texture: One for the normal villager, and one fo
 You can use MC's textures as a template.
 
 You can also decide how the model for the villager hat will be like if you provide a mcmeta file like this next to the texture:
-Directory: `assets/<namespace>/textures/entity/villager/profession/<name>.png.mcmeta`
-```json
+```json title="assets/<namespace>/textures/entity/villager/profession/<name>.png.mcmeta"
 {
     "villager": {
         "hat": "full"

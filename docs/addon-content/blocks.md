@@ -9,7 +9,7 @@ If you load the game up now, you will notice that your block has no model, no te
 
 ### Block State File
 The blockstate file defines the different models a block can use depending on its blockstate. Right now you can only add basic blocks with just one default blockstate, so your blockstate file will look like this, at `assets/<namespace>/blockstates/<block ID>.json`:
-```json
+```json title="assets/<namespace>/blockstates/<block ID>.json"
 {
   "variants": {
     "": {
@@ -21,9 +21,9 @@ The blockstate file defines the different models a block can use depending on it
 `test:block/test_stone` equates to `assets/test/models/block/test_stone.json` and is the location of the model file we will create in the next step. So change this to your required location.
 
 
-### Model File
+### Block Model File
 To create a model file for a basic cube, create the file that you specified in the last step, and make it look like this:
-```json
+```json title="assets/<namespace>/models/block/<block ID>.json"
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
@@ -36,9 +36,9 @@ To create a model file for a basic cube, create the file that you specified in t
 **You can also create a custom block model using BlockBench and put it here.**
 
 
-### Item File
+### Item Model File
 Every block has an item. And every item has its own model aswell! To create one create the file `assets/<namespace>/models/item/<block ID>.json` and have it look like this:
-```json
+```json title="assets/<namespace>/models/item/<block ID>.json"
 {
   "parent": "test:block/test_stone"
 }

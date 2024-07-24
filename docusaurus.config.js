@@ -20,7 +20,6 @@ const config = {
     presets: [
         [
             'classic',
-            /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
                     sidebarPath: './sidebars.js',
@@ -40,7 +39,6 @@ const config = {
     ],
 
     themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             image: 'img/social-card.jpg',
             navbar: {
@@ -71,42 +69,28 @@ const config = {
                 style: 'dark',
                 links: [
                     {
-                        title: 'Docs',
+                        title: 'Links',
                         items: [
-                            {
-                                label: 'Tutorial',
-                                to: '/docs/intro',
-                            },
-                        ],
-                    },
-                    {
-                        title: 'Community',
-                        items: [
-                            {
-                                label: 'Stack Overflow',
-                                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                            },
                             {
                                 label: 'Discord',
-                                href: 'https://discordapp.com/invite/docusaurus',
+                                href: 'https://discord.com/invite/GATzmppJms',
                             },
                             {
-                                label: 'Twitter',
-                                href: 'https://twitter.com/docusaurus',
+                                label: 'CurseForge',
+                                href: 'https://www.curseforge.com/members/lucraft/projects',
                             },
-                        ],
-                    },
-                    {
-                        title: 'More',
-                        items: [
+                            {
+                                label: 'Modrinth',
+                                href: 'https://modrinth.com/organization/threetag',
+                            },
                             {
                                 label: 'GitHub',
-                                href: 'https://github.com/facebook/docusaurus',
+                                href: 'https://github.com/ThreeTAG',
                             },
                         ],
                     },
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+                copyright: `Copyright © ${new Date().getFullYear()} ThreeTAG, Inc. Built with Docusaurus.`,
             },
             prism: {
                 theme: prismThemes.github,

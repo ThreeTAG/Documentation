@@ -5,10 +5,9 @@ sidebar_position: 1
 # Powers
 Powers are a collection of abilities that can be used as superpowers directly within a player, or can be bound to items or suit sets.
 To create a power you simply create a json file in the following folder:
-`data/<namespace>/palladium/powers/<filename>.json`
 
 A basic, ability-less setup should look like this:
-```json
+```json title="data/<namespace>/palladium/powers/<filename>.json"
 {
   "name": "Test Power",
   "background": "minecraft:textures/block/red_wool.png",

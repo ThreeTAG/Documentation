@@ -7,10 +7,8 @@ Then you don't need to do anything. Ability conditions are handled on the server
 
 ## Scoreboards values in render layers condition, dynamic texture variables, etc.:
 Then your first step is to create the following file:  
-`data/<your namespace>/tracked_scores.json`
-which will look like this:
 
-````json
+````json title="data/<namespace>/tracked_scores.json"
 {
   "objectives": [
     "test"

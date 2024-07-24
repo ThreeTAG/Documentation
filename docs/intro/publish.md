@@ -14,8 +14,8 @@ You can make Forge and Fabric load your addon pack as a mod!
 All you need to do is the following:  
 
 ### Fabric Support
-Add a `fabric.mod.json` file at the top level of your pack:
-```json
+Add the following file to your pack:
+```json title="fabric.mod.json"
 {
   "schemaVersion": 1,
   "authors": [],
@@ -32,8 +32,8 @@ Change the ID, name, version & description to your own, and Fabric will load you
 
 
 ### Forge Support
-Add a `mods.toml` file in a `META-INF` folder in your pack (so at `META-INF/mods.toml`):
-```toml
+Add the following file to your pack:
+```toml title="META-INF/mods.toml"
 modLoader = 'lowcodefml'
 showAsResourcePack = false
 loaderVersion="[47,)"

@@ -1,6 +1,6 @@
 # Armor Renderers
 
-**Before you start with this page, make sure to have checked [Custom Items](/addon-content/items) and the `items.html` file in
+**Before you start with this page, make sure to have checked [Custom Items](/docs/addon-content/items.md) and the `items.html` file in
 your Palladium-documentation folder.**
 
 If you've created an armor piece in your pack, it won't display on your actual player. To do so, you have to create an
